@@ -7,4 +7,3 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 # Set Up
 
 git clone https://github.com/cryplo/nvim.git ~/.config/nvim
-nvim
