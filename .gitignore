@@ -1,0 +1,14 @@
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+
+# Undo history (local to each machine)
+undo/
+
+# Plugin lock file (optional - remove this line if you want reproducible builds)
+# lazy-lock.json
