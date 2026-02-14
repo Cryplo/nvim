@@ -31,15 +31,6 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
--- Delete trailing whitespace on save
-vim.api.nvim_create_autocmd("BufWritePre", {
-  pattern = { "*.txt", "*.js", "*.py", "*.sh", "*.lua" },
-  callback = function()
-    local save_cursor = vim.fn.getpos(".")
-    vim.cmd([[%s/\s\+$//e]])
-    vim.fn.setpos(".", save_cursor)
-  end,
-})
 
 -- Fix capital letter typos for common commands
 vim.api.nvim_create_user_command("W", "write", {})
