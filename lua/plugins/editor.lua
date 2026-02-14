@@ -125,4 +125,21 @@ return {
       },
     },
   },
+
+  -- Minimap (like VSCode)
+  {
+    "nvim-mini/mini.map",
+    version = false,
+    keys = {
+      { "<leader>um", function() require("mini.map").toggle() end, desc = "Toggle minimap" },
+    },
+    config = function()
+      local map = require("mini.map")
+      map.setup({
+        symbols = {
+          encode = map.gen_encode_symbols.dot("4x2"),
+        },
+      })
+    end,
+  },
 }
