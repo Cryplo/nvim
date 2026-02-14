@@ -10,6 +10,7 @@
 vim.g.autoformat = false
 
 -- UI differences
+vim.opt.cursorline = false -- LazyVim: true
 vim.opt.scrolloff = 7 -- LazyVim: 4
 vim.opt.laststatus = 2 -- LazyVim: 3 (global statusline)
 vim.opt.wrap = true -- LazyVim: false
