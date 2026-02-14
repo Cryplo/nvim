@@ -6,6 +6,9 @@
 -- vim.g.mapleader = " "      -- Already set by LazyVim
 -- vim.g.maplocalleader = "\\" -- Already set by LazyVim
 
+-- Disable auto-format on save (use <leader>cf to format manually)
+vim.g.autoformat = false
+
 -- UI differences
 vim.opt.scrolloff = 7 -- LazyVim: 4
 vim.opt.laststatus = 2 -- LazyVim: 3 (global statusline)
