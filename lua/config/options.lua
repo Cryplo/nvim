@@ -13,10 +13,7 @@ vim.g.autoformat = false
 vim.opt.cursorline = false -- LazyVim: true
 vim.opt.scrolloff = 7 -- LazyVim: 4
 vim.opt.laststatus = 2 -- LazyVim: 3 (global statusline)
-vim.opt.wrap = true -- LazyVim: false
 vim.opt.ruler = true -- LazyVim: false
-vim.opt.cmdheight = 1 -- LazyVim: 0
-vim.opt.foldcolumn = "1" -- LazyVim: "0"
 
 -- Your additions (not in LazyVim)
 vim.opt.history = 500
