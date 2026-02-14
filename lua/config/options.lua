@@ -2,9 +2,9 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Only settings that DIFFER from LazyVim defaults are listed here.
 
--- Leader key (LazyVim uses Space, you use comma)
-vim.g.mapleader = ","
-vim.g.maplocalleader = ","
+-- Leader key (using LazyVim default: Space)
+-- vim.g.mapleader = " "      -- Already set by LazyVim
+-- vim.g.maplocalleader = "\\" -- Already set by LazyVim
 
 -- Tabs/indentation (LazyVim uses 2, you use 4)
 vim.opt.shiftwidth = 4
