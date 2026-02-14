@@ -2,7 +2,7 @@
 return {
   -- Mason - ensure your LSP servers are installed
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
         -- Your LSP servers from my_configs.vim

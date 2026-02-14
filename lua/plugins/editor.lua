@@ -79,15 +79,13 @@ return {
     end,
   },
 
-  -- Autopairs (LazyVim includes mini.pairs, but you can use nvim-autopairs if preferred)
+  -- Disable mini.pairs and use nvim-autopairs instead
+  { "mini.pairs", enabled = false },
   {
     "windwp/nvim-autopairs",
     event = "InsertEnter",
     opts = {},
   },
-
-  -- Disable mini.pairs since we're using nvim-autopairs
-  { "echasnovski/mini.pairs", enabled = false },
 
   -- Telescope (LazyVim includes this, add your custom keymaps)
   {
