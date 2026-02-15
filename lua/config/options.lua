@@ -9,6 +9,7 @@
 -- Disable auto-format on save (use <leader>cf to format manually)
 vim.g.autoformat = false
 
+
 -- UI differences
 vim.opt.cursorline = false -- LazyVim: true
 vim.opt.scrolloff = 7 -- LazyVim: 4

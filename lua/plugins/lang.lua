@@ -5,8 +5,8 @@ return {
     "lervag/vimtex",
     ft = { "tex", "latex" },
     init = function()
-      -- Use Zathura as PDF viewer (your setting)
-      vim.g.vimtex_view_method = "zathura"
+      -- Use Skim as PDF viewer
+      vim.g.vimtex_view_method = "skim"
 
       -- Compiler settings (your latexmk options)
       vim.g.vimtex_compiler_latexmk = {
