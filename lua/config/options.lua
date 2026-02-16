@@ -33,6 +33,27 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+-- Disable conceal for LaTeX files
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "tex",
+  callback = function()
+    vim.opt_local.conceallevel = 0
+  end,
+})
+
+-- Disable LSP inlay hints for LaTeX files
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function(args)
+    local bufnr = args.buf
+    if vim.bo[bufnr].filetype == "tex" then
+      vim.defer_fn(function()
+        vim.lsp.inlay_hint.enable(false, { bufnr = bufnr })
+      end, 100)
+    end
+  end,
+})
+
+
 
 -- Fix capital letter typos for common commands
 vim.api.nvim_create_user_command("W", "write", {})

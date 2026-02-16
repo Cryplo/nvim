@@ -86,18 +86,18 @@ return {
     opts = {},
   },
 
-  -- Telescope (LazyVim includes this, add your custom keymaps)
+  -- fzf-lua (replaces Telescope)
   {
-    "nvim-telescope/telescope.nvim",
+    "ibhagwan/fzf-lua",
     keys = {
-      { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find files" },
-      { "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Live grep" },
-      { "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Find buffers" },
-      { "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Help tags" },
+      { "<leader>ff", "<cmd>FzfLua files<cr>", desc = "Find files" },
+      { "<leader>fg", "<cmd>FzfLua live_grep<cr>", desc = "Live grep" },
+      { "<leader>fb", "<cmd>FzfLua buffers<cr>", desc = "Find buffers" },
+      { "<leader>fh", "<cmd>FzfLua help_tags<cr>", desc = "Help tags" },
       -- MRU (Most Recently Used) - similar to your :MRU
-      { "<leader>f", "<cmd>Telescope oldfiles<cr>", desc = "Recent files" },
+      { "<leader>f", "<cmd>FzfLua oldfiles<cr>", desc = "Recent files" },
       -- Buffer explorer alternative
-      { "<leader>o", "<cmd>Telescope buffers<cr>", desc = "Buffer explorer" },
+      { "<leader>o", "<cmd>FzfLua buffers<cr>", desc = "Buffer explorer" },
     },
   },
 
