@@ -10,6 +10,10 @@
 vim.g.autoformat = false
 
 
+-- Indentation (use vim's native smartindent instead of treesitter)
+vim.opt.smartindent = true
+vim.opt.autoindent = true
+
 -- UI differences
 vim.opt.cursorline = false -- LazyVim: true
 vim.opt.scrolloff = 7 -- LazyVim: 4

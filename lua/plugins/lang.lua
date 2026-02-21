@@ -26,6 +26,8 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
+      -- Disable treesitter indentation (use vim's smartindent instead)
+      opts.indent = { enable = false }
       vim.list_extend(opts.ensure_installed, {
         "bash",
         "c",
