@@ -23,7 +23,7 @@ vim.opt.ruler = true -- LazyVim: false
 -- Your additions (not in LazyVim)
 vim.opt.history = 500
 vim.opt.wildignore:append({ "*/.git/*", "*/.hg/*", "*/.svn/*", "*/.DS_Store" })
-vim.opt.magic = true
+vim.opt.magic = false
 vim.opt.showmatch = true
 vim.opt.matchtime = 2
 vim.opt.textwidth = 500
