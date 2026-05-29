@@ -126,6 +126,27 @@ return {
     },
   },
 
+  -- Diffview - full git diff and file history viewer
+  {
+    "sindrets/diffview.nvim",
+    cmd = {
+      "DiffviewOpen",
+      "DiffviewFileHistory",
+      "DiffviewClose",
+      "DiffviewToggleFiles",
+      "DiffviewFocusFiles",
+      "DiffviewRefresh",
+    },
+    keys = {
+      { "<leader>gd", "<cmd>DiffviewOpen<cr>", desc = "Git diff view" },
+      { "<leader>gD", "<cmd>DiffviewOpen %<cr>", desc = "Git diff current file" },
+      { "<leader>gh", "<cmd>DiffviewFileHistory %<cr>", desc = "Git file history" },
+      { "<leader>gH", "<cmd>DiffviewFileHistory<cr>", desc = "Git repository history" },
+      { "<leader>gq", "<cmd>DiffviewClose<cr>", desc = "Close git diff view" },
+    },
+    opts = {},
+  },
+
   -- Minimap (like VSCode)
   {
     "nvim-mini/mini.map",
