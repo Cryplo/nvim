@@ -1,0 +1,5 @@
+# Use Homebrew GCC headers for C++ files, including bits/stdc++.h.
+If:
+  PathMatch: .*\.(cpp|cc|cxx|c\+\+|hpp|hh|hxx)
+CompileFlags:
+  Compiler: /opt/homebrew/bin/g++-16

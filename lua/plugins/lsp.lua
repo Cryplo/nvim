@@ -31,7 +31,12 @@ return {
         pyright = {},
 
         -- C/C++
-        clangd = {},
+        clangd = {
+          cmd = {
+            "clangd",
+            "--query-driver=/opt/homebrew/bin/g++-16,/Users/dylanli/.local/bin/g++",
+          },
+        },
 
         -- TypeScript/JavaScript
         ts_ls = {},
